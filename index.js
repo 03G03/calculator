@@ -25,3 +25,13 @@ const operate = function (a, operator, b) {
         return divide(a, b);
     }
 }
+
+const sectionCalculator = document.querySelector(".section-calculator");
+const display = document.querySelector("#display-box");
+let btnclick = document.querySelector("#buttons");
+
+btnclick.addEventListener('click', (event) =>{
+    let btnValue = event.target.innerText;
+    console.log(btnValue);
+    display.textContent = btnValue;
+});
